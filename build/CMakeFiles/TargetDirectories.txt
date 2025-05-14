@@ -1,0 +1,3 @@
+C:/Users/Kamak/OneDrive/Desktop/Logica/build/CMakeFiles/logica.dir
+C:/Users/Kamak/OneDrive/Desktop/Logica/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Kamak/OneDrive/Desktop/Logica/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,10 @@
+^C:\USERS\KAMAK\ONEDRIVE\DESKTOP\LOGICA\BUILD\CMAKEFILES\CBF7B23C46FC5C15FC0F6AECF08E338D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Kamak/OneDrive/Desktop/Logica -BC:/Users/Kamak/OneDrive/Desktop/Logica/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Kamak/OneDrive/Desktop/Logica/build/Logica.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

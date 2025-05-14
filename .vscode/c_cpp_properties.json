@@ -1,0 +1,23 @@
+{
+    "configurations": [
+      {
+        "name": "Linux",
+        "includePath": [
+          "${workspaceFolder}/src",  // Your source files
+          "/usr/include/c++/13",  // C++ standard library headers
+          "/usr/include/x86_64-linux-gnu/c++/13",  // Architecture-specific C++ headers
+          "/usr/lib/gcc/x86_64-linux-gnu/13/include",  // GCC-specific includes
+          "/usr/local/include",  // Local includes (if any)
+          "/usr/include/x86_64-linux-gnu",  // System-specific includes
+          "/usr/include"  // General system includes
+        ],
+        "defines": [],
+        "compilerPath": "/usr/bin/g++",  // The path to your compiler
+        "cStandard": "c17",  // C standard
+        "cppStandard": "c++17",  // C++ standard
+        "intelliSenseMode": "linux-gcc-x64"  // IntelliSense mode
+      }
+    ],
+    "version": 4
+  }
+  
