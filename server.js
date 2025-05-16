@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Serve index.html at root
 app.get('/', (req, res) => {
@@ -31,6 +31,6 @@ const filePath = path.join(__dirname, '..', 'logica-installer.exe');
 console.log("Installer Exists:", fs.existsSync(filePath))
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
