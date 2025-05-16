@@ -1,39 +1,128 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #FFD700; /* Bright yellow */
+  color: black;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right a {
+  color: black;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+  color: #333333;
+}
+
+/* Header section */
+.header {
+  background-color: #222222;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 3px solid #FFD700;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #dddddd;
+}
+
+/* Main content section */
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main h2 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.main p, .main li {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* List styling in docs */
+.main ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Download link styling */
+.download-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #FFD700;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.download-link:hover {
+  background-color: #e6c200;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  /* Yellow header */
-  .header {
-    background-color: #FFD700;
-    color: #000;
-    padding: 3rem 1rem;
-    text-align: center;
+
+  .navbar-right {
+    margin-top: 1rem;
   }
-  
-  /* Black content area */
+
+  .navbar-right a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
   .main {
-    background-color: #000;
-    color: #FFD700;
-    padding: 3rem 1rem;
-    min-height: 60vh;
-    text-align: center;
+    padding: 1rem;
   }
-  
-  /* Download button */
-  a.download-link {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background-color: #FFD700;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  
-  a.download-link:hover {
-    background-color: #e6c200;
-  }
-  
+}
