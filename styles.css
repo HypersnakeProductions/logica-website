@@ -85,6 +85,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.version-info {
+  list-style-type: initial;
+}
+
 /* Download link styling */
 .download-link {
   display: inline-block;
